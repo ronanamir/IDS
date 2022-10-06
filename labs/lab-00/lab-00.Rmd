@@ -30,25 +30,25 @@ We now work on visualising our data.
 
 ```{r bar-plot}
 # Uncomment the three lines below
-# p1 <- ggplot(team_data, aes(x = username, y = die_roll)) +
-#   geom_col(fill = team_data$colour)
-# p1
+ p1 <- ggplot(team_data, aes(x = username, y = die_roll)) +
+   geom_col(fill = team_data$colour)
+ p1
 ```
 
 ### Exercise 19
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+A bar graph of the user against their die roll.
 
 ### Exercises 20--21
 
 ```{r labelled-bar-plot}
-# Uncomment the three lines below
-# p1 +
-#   labs(x = "Insert text here", y = "Insert text here",
-#        title = "Insert text here")
+ #Uncomment the three lines below
+ p1 +
+   labs(x = "Username", y = "Dice Roll",
+        title = "Users and the number they rolled on a 20 sided dice")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 21 here.*
+Doesn't show the name of each axis.
 
 ### Exercise 22
 
@@ -58,4 +58,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 22 here.*
+No colours so its hard to read. Also the y-axis has decimals event though it is discrete numerical data.
